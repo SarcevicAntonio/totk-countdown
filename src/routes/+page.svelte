@@ -51,6 +51,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
+		padding-block: 1em;
 		align-items: center;
 		color: var(--white);
 		text-shadow: 0 0 0.5em var(--blue);
