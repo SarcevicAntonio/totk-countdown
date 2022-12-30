@@ -6,7 +6,7 @@
 	import logo from './logo.png'
 	import { Dialog } from 'as-comps'
 
-	const next_xmas = set(new Date(), {
+	const totk_release = set(new Date(), {
 		year: 2023,
 		month: 4, // zero-based numbering makes 11 December
 		date: 12, // 24th is when we gift presents in germany
@@ -16,17 +16,24 @@
 		milliseconds: 0,
 	})
 
-	const xmas_countdown = countdown(next_xmas)
+	const totk_countdown = countdown(totk_release)
 </script>
 
 <main>
 	<img src={logo} alt="The Legend of Zelda: Tears of the Kingdom" />
 	<span>comes out in</span>
 	<section>
-		{#each Object.entries($xmas_countdown) as [label, number], i}
+		{#each Object.entries($totk_countdown) as [label, number], i}
 			<Segment {number}>{label}</Segment>
 		{/each}
 	</section>
+	<span>
+		({totk_release.toLocaleString(undefined, {
+			day: 'numeric',
+			month: 'numeric',
+			year: 'numeric',
+		})})
+	</span>
 	<Dialog triggerLabel="Watch Trailer">
 		<iframe
 			title="The Legend of Zelda: Tears of the Kingdom - Coming May 12th, 2023 - Nintendo Switch"
