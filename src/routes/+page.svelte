@@ -53,7 +53,7 @@
 		gap: 1em;
 		align-items: center;
 		color: var(--white);
-		text-shadow: 0 0 10px black;
+		text-shadow: 0 0 0.5em var(--blue);
 		text-align: center;
 	}
 
