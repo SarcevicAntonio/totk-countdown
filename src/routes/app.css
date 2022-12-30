@@ -1,0 +1,42 @@
+@font-face {
+	font-family: HyliaSerif;
+	src: url('/HyliaSerifBeta-Regular.otf') format('opentype');
+}
+
+:root {
+	--white: #faf7df;
+	--green: #74d2a0;
+	--gold: #b39f6c;
+	--black: #040304;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: HyliaSerif;
+	font-size: 2em;
+	display: grid;
+	place-content: center;
+	height: 100%;
+	margin: 0;
+	background-image: url('/body-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 0% 100%;
+}
+
+button {
+	font-family: inherit;
+	font-size: inherit;
+	color: var(--gold);
+	padding: 0.25em 0.5em;
+	background-color: var(--black);
+	background-image: url('/button-background.jpg');
+	border-color: var(--gold);
+	border-style: solid;
+	border-radius: 0.4em;
+	border-width: 0.1em;
+}
