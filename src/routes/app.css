@@ -10,16 +10,14 @@
 	--black: #040304;
 }
 
-html {
-	height: 100%;
-}
-
 body {
 	font-family: HyliaSerif;
 	font-size: 2em;
 	display: grid;
 	place-content: center;
-	height: 100%;
+	min-height: 100vh;
+	min-height: 100dvh;
+	padding-block: 1em;
 	margin: 0;
 	background-image: url('/body-background.jpg');
 	background-size: cover;

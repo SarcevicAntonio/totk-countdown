@@ -60,13 +60,20 @@
 	img {
 		display: block;
 		width: 15em;
+		max-width: 100vw;
 		margin: auto;
 	}
 
 	section {
 		display: flex;
-		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
 		gap: 1em;
-		align-items: baseline;
+	}
+
+	@media only screen and (min-width: 900px) {
+		section {
+			flex-direction: row;
+		}
 	}
 </style>
