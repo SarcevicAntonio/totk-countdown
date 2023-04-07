@@ -61,7 +61,7 @@
 	img {
 		display: block;
 		width: 15em;
-		max-width: 100vw;
+		max-width: calc(100vw - 4em);
 		margin: auto;
 	}
 
